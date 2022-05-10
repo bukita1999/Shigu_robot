@@ -117,6 +117,7 @@
     <!--<arg name="map_file" value="$(find shigu_navigation)/maps/gmapping4.yaml"/>-->
     <!-- <arg name="map_file" value="$(find shigu_navigation)/maps/big_map.yaml"/> -->
     <arg name="map_file" value="$(find shigu_navigation)/maps/2d2map.yaml"/>
+    <!-- <arg name="map_file" value="$(find shigu_navigation)/maps/rtabmap2d.yaml"/> -->
   </include>
   <!--gmapping 建图导航-->
   <!-- <include file="$(find shigu_navigation)/launch/gmapping_demo.launch">
