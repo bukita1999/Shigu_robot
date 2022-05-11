@@ -888,7 +888,7 @@
           <ray>
               <scan>
                 <horizontal>
-                  <samples>720</samples>
+                  <samples>360</samples>
                   <resolution>1</resolution>
                   <min_angle>-3.14</min_angle>
                   <max_angle>3.14</max_angle>
@@ -896,13 +896,16 @@
               </scan>
               <range>
                 <min>0.2</min>
+                <!-- <min>0.05</min> -->
                 <max>20.0</max>
+                <!-- <max>100.0</max> -->
                 <resolution>0.01</resolution>
+                <!-- <resolution>0.0001</resolution> -->
               </range>
               <noise>
                 <type>gaussian</type>
                 <mean>0.0</mean>
-                <stddev>0.01</stddev>
+                <stddev>0.1</stddev>
               </noise>
           </ray>
           <plugin name="gazebo_rplidar" filename="libgazebo_ros_laser.so">

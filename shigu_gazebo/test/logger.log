@@ -1,0 +1,1429 @@
+start program
+[ROSUNIT] Outputting test results to /root/.ros/test_results/shigu_gazebo/rosunit-navigation_test.xml
+[Testcase: test_single_goal] ... FAILURE!
+FAILURE: True is not false
+  File "/usr/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/root/Shigu/src/shigu_robot/shigu_gazebo/test/test_navigation.py", line 57, in test_single_goal
+    self.assertFalse(self.available_)
+  File "/usr/lib/python2.7/unittest/case.py", line 416, in assertFalse
+    raise self.failureException(msg)
+--------------------------------------------------------------------------------
+-------------------------------------------------------------
+SUMMARY:
+ * RESULT: FAIL
+ * TESTS: 1
+ * ERRORS: 0 []
+ * FAILURES: 1 [test_single_goal]
+
+start program
+start programstart programstart program
+start program
+scan topic is available
+scan topic is available
+scan topic is available
+scan topic is available
+data read from csv
+scan topic is available
+data read from csv
+scan topic is available:3.779630184
+data read from csv
+scan topic is available:3.779630184
+data read from csv
+scan topic is available:3.779630184
+data read from csv
+scan topic is available:3.779630184
+ready to publish
+data read from csv
+scan topic is available:3.779630184
+ready to publish
+publish complete
+data read from csv
+scan topic is available:3.779630184
+ready to publish
+publish complete
+data read from csv
+scan topic is available:3.779630184
+data read from csv
+scan topic is available:3.779630184
+ready to publish
+publish complete
+data read from csv
+scan topic is available:3.779630184
+ready to publish
+publish complete
+data read from csv
+scan topic is available:3.779630184
+ready to publish
+publish complete
+data read from csv
+scan topic is available:3.779630184
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:3.779630184
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:3.779630184
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:1.258174181
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:1.258174181
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:1.258174181
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:1.258174181
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:1.258174181
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:1.258174181
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:3.779630184
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:3.779630184
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:7.796260834
+ready to publish
+True
+publish complete
+moving
+reached!
+data read from csv
+scan topic is available:9.487706184
+ready to publish
+True
+publish complete
+moving, status:2
+data read from csv
+scan topic is available:1.258174181
+ready to publish
+True
+publish complete
+moving, status:3
+reached!
+data read from csv
+scan topic is available:1.258174181
+ready to publish
+True
+publish complete
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:2
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:3
+reached!
+data read from csv
+scan topic is available:11.14662266
+ready to publish
+True
+publish complete
+moving, status:3
+reached!
+data read from csv
+scan topic is available:11.14662266
+ready to publish
+True
+publish complete
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:3
+reached!
+data read from csv
+scan topic is available:11.60201359
+ready to publish
+True
+publish complete
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:3
+reached!
+data read from csv
+scan topic is available:12.8119154
+ready to publish
+True
+publish complete
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:1
+moving, status:3
+reached!
+data read from csv
+scan topic is available:23.28852463
+ready to publish
+True
+publish complete
+data read from csv
+scan topic is available:23.28852463
+ready to publish
+True
+publish complete
+Is it available:True
+data read from csv
+scan topic is available:23.28852463
+ready to publish
+True
+publish complete
+Is it available:True
+data read from csv
+scan topic is available:23.28852463
+ready to publish
+True
+publish complete
+Is it available:None
+data read from csv
+scan topic is available:23.28852463
+ready to publish
+True
+publish complete
