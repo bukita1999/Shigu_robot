@@ -6,7 +6,7 @@
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/playpen.world"/> -->
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/liangcang.world"/> -->
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108.world"/> -->
-    <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_2d2.world"/>
+    <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_2d2.world"/>lds/my
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_2d3.world"/> -->
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_3d.world"/> -->
     <arg name="paused" value="false"/>

@@ -12,25 +12,26 @@ import csv
 import logging
 import unittest
 import codecs
+import time
 
 
 class TestNavigation(unittest.TestCase):
     def setUp(self):
         self.filename = None
-        self.available_ = None
+        self.available_ = 0
         self.seq = None
         self.goal = gm.PoseStamped()
 
 
     # wait until hear the /scan topic
     def scan_topic_listener(self):
-        rospy.wait_for_message('/scan',LaserScan,timeout=20)
+        rospy.wait_for_message('/scan',LaserScan,timeout=50)
 
     # send single goal to /move_base_simple/goal and see feedback
     def test_single_goal(self):
         self.filename = str(sys.argv[1])
-        available_ = bool(sys.argv[2])
-        self.output_log('Is it available:' + str(self.available_))
+        self.available_ = int(sys.argv[2])
+        self.output_log('Is it available:' + str(self.available_) + sys.argv[2])
         self.seq = int(sys.argv[3])
         tolerance = float(sys.argv[4])
         rospy.init_node('navigation_tester')
@@ -42,7 +43,7 @@ class TestNavigation(unittest.TestCase):
         self.output_log('publish complete')
         try:
             rospy.wait_for_message('/move_base/DWAPlannerROS/global_plan',Path,timeout=10)
-            self.assertTrue(self.available_)
+            self.assertNotEqual(self.available_,0)
             goalStatus = GoalStatusArray()
             status = 1
             rospy.sleep(10) # avoid the first feedback
@@ -51,10 +52,6 @@ class TestNavigation(unittest.TestCase):
                 status = rospy.wait_for_message('/move_base/status',GoalStatusArray,timeout=10).status_list[0].status
                 self.output_log('moving, status:' + str(status))
                 rospy.sleep(0.1)
-                self.asse
-                i = i + 1
-                
-                
             if status == 3:
                 self.output_log('reached!')
                 amcl_pose = rospy.wait_for_message('/amcl_pose',gm.PoseWithCovarianceStamped,timeout=10)
@@ -66,8 +63,18 @@ class TestNavigation(unittest.TestCase):
                 self.assertAlmostEqual(amcl_pose.pose.pose.orientation.z,self.goal.pose.orientation.z, delta = tolerance)
                 self.assertAlmostEqual(amcl_pose.pose.pose.orientation.w,self.goal.pose.orientation.w, delta = tolerance)
         except rospy.ROSException:
-            output_log('timeout means the goal is not available')
-            self.assertFalse(self.available_)
+            self.output_log('timeout means the goal is not available or already reached')
+            amcl_pose = rospy.wait_for_message('/amcl_pose',gm.PoseWithCovarianceStamped,timeout=10)
+            self.output_log('get amcl_pose')
+            self.output_log(str(self.goal.pose.position.x))
+            self.output_log(str(amcl_pose.pose.pose.position.x))
+            self.output_log(str(abs(float(amcl_pose.pose.pose.position.x)- float(self.goal.pose.position.x))))
+            if(abs(float(amcl_pose.pose.pose.position.x) - float(self.goal.pose.position.x)) > tolerance):
+                self.output_log('not available')
+                self.assertEqual(self.available_,0)
+            else:
+                self.output_log('already reached')
+                self.assertNotEqual(self.available_,0)
         
         
         
@@ -95,8 +102,10 @@ class TestNavigation(unittest.TestCase):
                     break    
 
     def output_log(self, log):
-        with open('logger.log', 'a') as file:
-            file.write(log + '\n')
+        now = int(round(time.time()*1000))
+        now02 = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(now/1000))
+        with open(sys.argv[5], 'a') as file:
+            file.write(now02 + '  ::  ' + log + '\n')
         
 if __name__ == '__main__':
     rostest.run('shigu_gazebo','navigation_test',TestNavigation,sys.argv)
