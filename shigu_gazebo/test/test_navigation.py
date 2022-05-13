@@ -25,7 +25,7 @@ class TestNavigation(unittest.TestCase):
 
     # wait until hear the /scan topic
     def scan_topic_listener(self):
-        rospy.wait_for_message('/scan',LaserScan,timeout=50)
+        rospy.wait_for_message('/scan',LaserScan,timeout=100)
 
     # send single goal to /move_base_simple/goal and see feedback
     def test_single_goal(self):
