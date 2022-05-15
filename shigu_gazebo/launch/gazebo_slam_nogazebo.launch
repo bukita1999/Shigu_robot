@@ -3,12 +3,12 @@
 <launch>
   <!--加载地图-->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find shigu_gazebo)/worlds/playpen.world"/>
+    <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/playpen.world"/> -->
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/turtleworlds/turtlebot3_world.world"/> -->
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/liangcang.world"/> -->
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/worlds/office_env_large.world"/> -->
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108.world"/> -->
-    <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_2d2.world"/> -->
+    <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_2d2.world"/>
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_2d3.world"/> -->
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_3d.world"/> -->
     <arg name="paused" value="false"/>
@@ -22,7 +22,7 @@
   </include>
     <!--导入urdf模型-->
   <node name="spawn_shigu_model" pkg="gazebo_ros" type="spawn_model"
-    args="-x 0 -y 0 -z 0  -Y -1.57079632 -unpause -urdf -param robot_description -model  shigu " /> <!--将载体坐标系与ENU坐标系对准，playpen使用x = 0 ,y =0 ,myworld2d2使用x=5 y=5-->
+    args="-x 5 -y 5 -z 0  -Y -1.57079632 -unpause -urdf -param robot_description -model  shigu " /> <!--将载体坐标系与ENU坐标系对准，playpen使用x = 0 ,y =0 ,myworld2d2使用x=5 y=5-->
   
   <!-- 加载 controller configuration -->
   <rosparam command="load" file="$(find shigu_control)/config/control.yaml" />

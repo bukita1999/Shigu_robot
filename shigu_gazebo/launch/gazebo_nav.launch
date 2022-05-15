@@ -3,10 +3,10 @@
 <launch>
   <!--加载地图-->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/playpen.world"/> -->
+    <arg name="world_name" value="$(find shigu_gazebo)/worlds/playpen.world"/>
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/liangcang.world"/> -->
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108.world"/> -->
-    <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_2d2.world"/>lds/my
+    <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_2d2.world"/>lds/my -->
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_2d3.world"/> -->
     <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_3d.world"/> -->
     <arg name="paused" value="false"/>
@@ -20,7 +20,7 @@
   </include>
     <!--导入urdf模型-->
   <node name="spawn_shigu_model" pkg="gazebo_ros" type="spawn_model"
-    args="-x 5 -y 5 -z 0  -Y -1.57079632 -unpause -urdf -param robot_description -model  shigu " /> <!--将载体坐标系与ENU坐标系对准-->
+    args="-x 0 -y 0 -z 0  -Y -1.57079632 -unpause -urdf -param robot_description -model  shigu " /> <!--将载体坐标系与ENU坐标系对准-->
 
   <!-- 加载 controller configuration -->
   <rosparam command="load" file="$(find shigu_control)/config/control.yaml" />
@@ -116,8 +116,10 @@
   <include file="$(find shigu_navigation)/launch/navigation.launch">
     <!--<arg name="map_file" value="$(find shigu_navigation)/maps/gmapping4.yaml"/>-->
     <!-- <arg name="map_file" value="$(find shigu_navigation)/maps/big_map.yaml"/> -->
-    <arg name="map_file" value="$(find shigu_navigation)/maps/2d2map.yaml"/>
+    <!-- <arg name="map_file" value="$(find shigu_navigation)/maps/2d2map.yaml"/> -->
     <!-- <arg name="map_file" value="$(find shigu_navigation)/maps/rtabmap2d.yaml"/> -->
+    <!-- <arg name="map_file" value="$(find shigu_navigation)/maps/playpen_map.yaml"/> -->
+    <arg name="map_file" value="$(find shigu_navigation)/maps/mypenmap.yaml"/>
   </include>
   <!--gmapping 建图导航-->
   <!-- <include file="$(find shigu_navigation)/launch/gmapping_demo.launch">

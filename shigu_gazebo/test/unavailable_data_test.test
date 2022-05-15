@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <launch>
-    <include file="$(find shigu_gazebo)/launch/gazebo_nav_nogui.launch"></include>
+    <include file="$(find shigu_gazebo)/launch/gazebo_nav.launch"></include>
     <!-- 参数1为存放数据的位置，参数2为是否可达数据，参数3为csv表中第几个，第四个容忍度，第五个是日志位置 -->
     <test time-limit="300" test-name="unavailable_goal_test_1" pkg="shigu_gazebo"
         type="test_navigation.py"  

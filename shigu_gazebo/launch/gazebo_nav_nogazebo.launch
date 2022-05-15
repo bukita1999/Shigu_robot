@@ -1,29 +1,13 @@
 <?xml version="1.0"?>
 
 <launch>
-  <!--加载地图-->
-  <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find shigu_gazebo)/worlds/playpen.world"/>
-    <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/turtleworlds/turtlebot3_world.world"/> -->
-    <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/liangcang.world"/> -->
-    <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/worlds/office_env_large.world"/> -->
-    <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108.world"/> -->
-    <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_2d2.world"/> -->
-    <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_2d3.world"/> -->
-    <!-- <arg name="world_name" value="$(find shigu_gazebo)/worlds/my_world20211108_3d.world"/> -->
-    <arg name="paused" value="false"/>
-    <arg name="use_sim_time" value="true"/>
-    <arg name="gui" value="true"/>
-    <arg name="headless" value="false"/>
-    <arg name="debug" value="false"/>
-  </include>
   <!-- 加载 robot description -->
   <include file="$(find shigu_description)/launch/description.launch" >
   </include>
     <!--导入urdf模型-->
   <node name="spawn_shigu_model" pkg="gazebo_ros" type="spawn_model"
-    args="-x 0 -y 0 -z 0  -Y -1.57079632 -unpause -urdf -param robot_description -model  shigu " /> <!--将载体坐标系与ENU坐标系对准，playpen使用x = 0 ,y =0 ,myworld2d2使用x=5 y=5-->
-  
+    args="-x 5 -y 5 -z 0  -Y -1.57079632 -unpause -urdf -param robot_description -model  shigu " /> <!--将载体坐标系与ENU坐标系对准-->
+
   <!-- 加载 controller configuration -->
   <rosparam command="load" file="$(find shigu_control)/config/control.yaml" />
 
@@ -36,7 +20,7 @@
 
   <!-- 运行robot_state_publisher节点，发布tf  -->
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
-  
+
   <!--速度复用-->
   <node pkg="twist_mux" type="twist_mux" name="twist_mux">
     <rosparam command="load" file="$(find shigu_control)/config/twist_mux.yaml" />
@@ -53,7 +37,7 @@
       <remap from="left/camera_info"  to="/stereo_camera/left/camera_info_throttle"/>
       <remap from="right/camera_info" to="/stereo_camera/right/camera_info_throttle"/>
       <remap from="odom"              to="/stereo_odometry"/>
-      <param name="publish_tf"   type="bool" value="true"/>
+      <param name="publish_tf"   type="bool" value="false"/>
       <param name="subscribe_rgbd"  type="bool" value="false"/>
       <param name="frame_id"        type="string" value="base_link"/>
       <param name="odom_frame_id"   type="string" value="odom"/>
@@ -82,10 +66,10 @@
   <!-- 视觉里程计从载体坐标系转换到导航东北天坐标系 -->
   <node name="stereBASE2ENU" pkg="coordinate_transform" type="stereBASE2ENU" >
   </node>
-
+  ]]>
   <!-- 传感器融合定位 -->
   <!-- eskf -->
-  <node name="eskf_imu_gps_node" pkg="eskf_imu_gps" type="eskf_imu_gps_node" output="screen" >
+  <!-- <node name="eskf_imu_gps_node" pkg="eskf_imu_gps" type="eskf_imu_gps_node" output="screen" >
     <remap from="/fix" to="/navsat/fix"/>
     <param name="acc_noise"       type="double" value="1e-2" />
     <param name="gyr_noise"       type="double" value="1e-4" />
@@ -95,7 +79,7 @@
     <param name="p_I_GNSS_y"      type="double" value="0."/>
     <param name="p_I_GNSS_z"      type="double" value="0.013"/>
     <param name="publish_tf"      type="bool" value="false"/>
-  </node>
+  </node> -->
     <!-- ekf -->
   <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization_node" clear_params="true">
     <rosparam command="load" file="$(find robot_localization)/params/my_param.yaml" />
@@ -103,21 +87,25 @@
   </node>
 
   <!-- 可视化 -->
-  <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find shigu_viz)/rviz/position.rviz" output="screen"/> --> 
-
+  <!--
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find shigu_viz)/rviz/position.rviz" output="screen"/> 
+  -->
   <!--里程计数据保存-->
-  <include file="$(find data_store)/launch/data_record.launch">
-  </include>
+  <!--<include file="$(find data_store)/launch/data_record.launch">
+  </include>-->
 
-  ]]>
   <!--gmapping 建图-->
-   <include file="$(find shigu_navigation)/launch/gmapping.launch">
+  <!--<include file="$(find shigu_navigation)/launch/gmapping.launch">
   </include>
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find shigu_viz)/rviz/slam.rviz" output="screen"/> 
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find shigu_viz)/rviz/slam.rviz" output="screen"/> -->
   <!-- 有地图情况下导航+amcl定位 -->
-  <!-- <include file="$(find shigu_navigation)/launch/navigation.launch">
-    <arg name="map_file" value="$(find shigu_navigation)/maps/gmapping4.yaml"/>
-  </include> -->
+  <include file="$(find shigu_navigation)/launch/navigation.launch">
+    <!--<arg name="map_file" value="$(find shigu_navigation)/maps/gmapping4.yaml"/>-->
+    <!-- <arg name="map_file" value="$(find shigu_navigation)/maps/big_map.yaml"/> -->
+    <!-- <arg name="map_file" value="$(find shigu_navigation)/maps/2d2map.yaml"/> -->
+    <!-- <arg name="map_file" value="$(find shigu_navigation)/maps/rtabmap2d.yaml"/> -->
+    <arg name="map_file" value="$(find shigu_navigation)/maps/playpen_map.yaml"/>
+  </include>
   <!--gmapping 建图导航-->
   <!-- <include file="$(find shigu_navigation)/launch/gmapping_demo.launch">
   </include> -->
