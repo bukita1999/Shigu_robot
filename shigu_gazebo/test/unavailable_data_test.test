@@ -8,7 +8,4 @@
     <test time-limit="300" test-name="unavailable_goal_test_2" pkg="shigu_gazebo"
         type="test_navigation.py"  
         args="$(find shigu_gazebo)/test/test_data_unavailable.csv 0 1 0.5 $(find shigu_gazebo)/test/logger.log" />
-    <test time-limit="300" test-name="unavailable_goal_test_8" pkg="shigu_gazebo"
-        type="test_navigation.py"  
-        args="$(find shigu_gazebo)/test/test_data_unavailable.csv 0 7 0.5 $(find shigu_gazebo)/test/logger.log" />
 </launch>

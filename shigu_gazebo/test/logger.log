@@ -8807,3 +8807,39 @@ reached!
 2022-05-15 23:07:30  ::  moving, status:1
 2022-05-15 23:07:30  ::  moving, status:3
 2022-05-15 23:07:31  ::  reached!
+2022-05-15 23:24:01  ::  Is it available:00
+2022-05-15 23:24:01  ::  data read from csv
+2022-05-15 23:24:01  ::  scan topic is available:5.396351814
+2022-05-15 23:24:01  ::  ready to publish
+2022-05-15 23:24:03  ::  True
+2022-05-15 23:24:03  ::  publish complete
+2022-05-15 23:24:13  ::  timeout means the goal is not available or already reached
+2022-05-15 23:24:13  ::  get amcl_pose
+2022-05-15 23:24:13  ::  5.396351814
+2022-05-15 23:24:13  ::  0.0239499116938
+2022-05-15 23:24:13  ::  5.37240190231
+2022-05-15 23:24:13  ::  not available
+2022-05-15 23:24:35  ::  Is it available:00
+2022-05-15 23:24:36  ::  data read from csv
+2022-05-15 23:24:36  ::  scan topic is available:-3.255287409
+2022-05-15 23:24:36  ::  ready to publish
+2022-05-15 23:24:38  ::  True
+2022-05-15 23:24:38  ::  publish complete
+2022-05-15 23:24:48  ::  timeout means the goal is not available or already reached
+2022-05-15 23:24:48  ::  get amcl_pose
+2022-05-15 23:24:48  ::  -3.255287409
+2022-05-15 23:24:48  ::  0.0239499116938
+2022-05-15 23:24:48  ::  3.27923732069
+2022-05-15 23:24:48  ::  not available
+2022-05-15 23:25:10  ::  Is it available:00
+2022-05-15 23:25:11  ::  data read from csv
+2022-05-15 23:25:11  ::  scan topic is available:0.0
+2022-05-15 23:25:11  ::  ready to publish
+2022-05-15 23:25:13  ::  True
+2022-05-15 23:25:13  ::  publish complete
+2022-05-15 23:25:23  ::  timeout means the goal is not available or already reached
+2022-05-15 23:25:23  ::  get amcl_pose
+2022-05-15 23:25:23  ::  0.0
+2022-05-15 23:25:23  ::  0.0239499116938
+2022-05-15 23:25:23  ::  0.0239499116938
+2022-05-15 23:25:23  ::  already reached
